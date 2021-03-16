@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+            padding: 0;
+            margin: 0;
+            }
+            .umbraButonInapoi { filter: drop-shadow(2px 3px 1px #D0D0D0); 
+            position: absolute;	
+            }
+            #butonInapoi {
+            width: 70px;
+            height: 40px;
+            background-color: #cfe7ff;
+            margin-top: 25px;
+            margin-left: 70px;
+            -webkit-clip-path: polygon(0 69%, 21% 0, 21% 60%, 100% 60%, 100% 78%, 21% 78%, 21% 100%);
+            clip-path: polygon(0 69%, 21% 0, 21% 60%, 100% 60%, 100% 78%, 21% 78%, 21% 100%);
+            }
+            #butonInapoi:hover { color: #2e31ad ;background-color: #9ab3ff;
+            cursor: pointer; }
+            #inapoiText p {
+            position: absolute;
+            left: 83px;
+            top: 24px;
+            padding: 5px 20px 3px 12px;
+            }
+            #inapoiText p:hover {
+            color: #001f4d ;
+            cursor: pointer;
+            }
+            #inapoiText p:hover ~ #butonInapoi {
+            background-color: #9ab3ff;
+            }
+            .imagineBackground {
+            background-image: url(imagini/gadgets.jpg);
+            width: 99.9%;
+            height: 99%;
+            position: absolute;
+            opacity: 0.1;
+            z-index: -1;
+            }
+            /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ meniu navigare  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+            #navigare {
+            position: absolute;
+            height: 1px;
+            margin-top: 10px;
+            right: 50px;
+            }
+            ul {
+            list-style: none;
+            }
+            ul li {
+            margin-top: 5px;
+            padding-bottom: 9px;
+            padding-top: 10px;
+            text-align: center;
+            margin-right: 10px;
+            float: right;
+            line-height: 30px;
+            border-right: 2px solid #503199;
+            border-radius: 3px;
+            background-position: right bottom;	    
+            }	
+            ul li a {
+            text-decoration: none;
+            }
+            ul li:hover{
+            background-position: left bottom;
+            transition: all .5s ease-out;
+            /* background: -webkit-linear-gradient(left, #9ab3ff, #8552ff );*/
+            background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%,#e1e8ff 20%,#e1e8ff
+            30%, #bdceff 45%, #9ab3ff 50%, #bdceff 65%, #e1e8ff 80%,
+            rgba(0, 0, 0, 0) 100% );
+            border-right: 2px solid #503199;
+            /*box-shadow: 0 0px 0 0 #4d4d4d;*/
+            box-shadow: 4px 0 2px -3px black;
+            border-radius: 3px;	   
+            }
+            #navigare ul li:hover {
+            background-size: 200% 100%;
+            }
+            #navigare a{
+            text-shadow: 1px 1px 1px white;	
+            padding: 0px 10px;
+            font-size: 20px;
+            color: #303030;		
+            }
+            .titluMagazin {
+            white-space: nowrap;
+            }
+            .titluMagazin p{
+            margin-top: 100px;
+            position: absolute;
+            color: #00006e;
+            left: 50%;
+            transform: translate(-50%);
+            font-size: 28px;
+            }
+            .titluMagazin span {
+            color:  #8552ff;
+            font-size: 32px;
+            text-shadow: 1px 1px 2px black;
+            min-width: 500px;
+            }
+            /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  balanta  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+            .containerBalanta:hover { display: inline; }
+            .imagineGadgeturi {
+            width: 100%;
+            height: 100%;
+            background-image: url(imagini/gadgets.jpg);
+            background-size: 100%;
+            opacity: 0.1;
+            z-index: -1;
+            position: absolute;
+            }
+            #butonBalanta {
+            position: absolute;
+            margin-top: 230px;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 10px 5px 10px 10px;
+            border: 1px solid #A0A0A0;
+            background-color: #e6e6ff;
+            cursor: pointer;
+            border-radius: 10px;		
+            filter: drop-shadow(0 3px 4px #383838);
+            z-index: 11111;
+            }
+            #butonBalanta p { padding: 0px 20px; font-size: 20px; }
+            #butonBalanta:hover { background-color:  #ccccff; }
+            #butonBalanta:hover ~ #talerStanga {
+            margin-top: 153px;
+            transition: 2s;
+            animation: balanta 2s;
+            transition-delay: 1.4s;
+            }
+            #butonBalanta:hover ~ #talerDreapta {
+            margin-top: 38px;
+            transition: 2s;
+            transition-delay: 1.4s;
+            }
+            #butonBalanta:hover ~ .linieSus {
+            transform: rotate(-15deg);
+            transition: 2s;
+            transition-delay: 1.4s;
+            } 
+            #butonBalanta:hover ~ #balantaClipPath {
+            clip-path: polygon(10% 100%, 10% 90%, 25% 90%, 25% 83%, 40% 83%, 40% 76%, 5% 76%, 5% 62%, 15% 42%, 15% 7%, 48% 7%, 48% 0, 52% 0, 52% 7%, 85% 7%, 85% 20%, 95% 40%, 95% 55%, 60% 55%, 60% 83%, 75% 83%, 75% 90%, 90% 90%, 90% 100%);
+            transition: 2s;
+            transition-delay: 1.4s;
+            }
+            #butonBalanta:hover ~ .containerPiatraLogo { 
+            animation: piatraLogo 3.4s forwards;
+            }
+            @keyframes piatraLogo {
+            0% {margin-top: -10px; opacity: 0;}
+            34.5% {margin-top: -10px; opacity: 1;}
+            /*60% {margin-top: 70px; }*/
+            100% {margin-top: 143px; opacity: 1;}	
+            }
+            #balanta {
+            width: 800px;
+            height: 500px;
+            border: 1px solid rgba(0,0,0,0);
+            position: absolute;
+            left: 50%;
+            transform: translate( -50%);
+            margin-top: 180px;
+            filter: drop-shadow(0 6px 3px #686868);
+            }
+            #balantaLinii {
+            width: 670px;
+            height: 250px;
+            margin: 100px auto;
+            position: relative;
+            filter: drop-shadow(0 6px 3px #331a00);
+            }
+            .linieSus {
+            position: absolute;
+            left: 175px;
+            width: 450px;
+            height: 5px;
+            margin-top: 90px;
+            background-image: linear-gradient(to bottom , #F0F0F0 ,  #505050 );
+            transform: rotate(15deg);
+            box-shadow: 0 0 5px black;
+            z-index: 11;
+            }
+            .linieVerticalaMijloc { 
+            width: 10px;
+            height: 410px;
+            background-image: linear-gradient(to right , #F0F0F0 ,  #505050 );
+            margin: -90px auto 0 auto;
+            border-top-left-radius: 50px 50px;
+            border-top-right-radius: 50px 50px;
+            }
+            .linieJos1 {
+            width: 300px;
+            height: 25px;
+            background-image: linear-gradient(to bottom , #F0F0F0 ,  #505050 );
+            margin: 0 auto;
+            }
+            .linieJos2 {
+            width:450px;
+            height: 25px;
+            background-image: linear-gradient(to bottom , #F0F0F0 ,  #505050 );
+            margin: 0 auto;
+            }
+            /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  taler stanga  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+            #talerStanga {
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            margin-left: 83px;
+            margin-top: 38px;
+            filter: drop-shadow(0 6px 3px #686868);
+            }
+            #linieDreaptaStanga {
+            height: 40px;
+            border-left:dotted;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            }
+            #linieOblicaStanga1 {
+            border-left:dotted;
+            height: 140px;
+            position: absolute;
+            left: 50%;
+            transform: rotate(35deg);
+            margin-top: 31px;
+            margin-left: -42px;
+            }
+            #linieOblicaStanga2 {
+            border-left:dotted;
+            height: 140px;
+            position: absolute;
+            left: 50%;
+            transform: rotate(-35deg);
+            margin-top:31px;
+            margin-left: 39px;
+            }
+            #cantarStanga {
+            position: absolute;
+            margin-top: 160px;
+            margin-left: 15px;
+            width: 170px;
+            height: 30px;
+            height: 30px;border-top: 2px solid white;
+            border-bottom-left-radius: 150px 50px;
+            border-bottom-right-radius: 150px 50px;
+            background-image: linear-gradient(to bottom , #F0F0F0 ,  #505050 );
+            }
+            /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   taler dreapta ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+            #talerDreapta {
+            width: 200px;
+            height: 300px;
+            right: 83px;
+            margin-top: 153px;
+            position: absolute;
+            filter: drop-shadow(0 6px 3px #686868);
+            }
+            #linieDreaptaDreapta {
+            height: 40px;
+            border-left:dotted;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            }
+            #linieOblicaDreapta1 {
+            border-left:dotted;
+            height: 140px;
+            position: absolute;
+            left: 50%;
+            transform: rotate(35deg);
+            margin-top: 31px;
+            margin-left: -42px;
+            }
+            #linieOblicaDreapta2 {
+            border-left:dotted;
+            height: 140px;
+            position: absolute;
+            left: 50%;
+            transform: rotate(-35deg);
+            margin-top: 31px;
+            margin-left: 39px;
+            }
+            #cantarDreapta {
+            position: absolute;
+            margin-top: 160px;
+            margin-left: 15px;
+            width: 170px;
+            height: 30px;border-top: 2px solid white;
+            border-bottom-left-radius: 150px 50px;
+            border-bottom-right-radius: 150px 50px;
+            background-image: linear-gradient(to bottom , #F0F0F0 ,  #505050 );
+            }
+            .magazine {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            background-image: url(imagini/magazine2.jpg);
+            background-size: 100% 100%;
+            margin-top:-103px;
+            margin-left: 10px;
+            }
+            #balantaClipPath {
+            margin-top: -20px;
+            margin-left: 30px;
+            width: 740px;
+            height: 500px;
+            position: absolute;
+            background-image: url(imagini/3344.jpg);
+            clip-path: polygon(10% 100%, 10% 90%, 25% 90%, 25% 83%, 40% 83%, 40% 55%, 5% 55%, 5% 40%, 15% 20%, 15% 7%, 48% 7%, 48% 0, 52% 0, 52% 7%, 85% 7%, 85% 42%, 95% 62%, 95% 76%, 60% 76%, 60% 83%, 75% 83%, 75% 90%, 90% 90%, 90% 100%);
+            }
+            /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ piatra magazin  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+            .containerPiatraLogo {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            margin-left: -220px;
+            margin-top: -20px;
+            filter: drop-shadow(0 4px 4px grey); 
+            z-index: 11111;
+            opacity: 0;
+            }
+            .piatraBaza {
+            position: relative;
+            margin-left: 8px;
+            width: 200px;
+            height: 170px;
+            clip-path: polygon(53% 100%, 42% 99%, 35% 100%, 28% 96%, 20% 93%, 16% 84%, 9% 79%, 9% 69%, 4% 65%, 6% 58%, 4% 50%, 1% 47%, 3% 36%, 7% 29%, 9% 20%, 15% 13%, 24% 12%, 30% 6%, 39% 1%, 46% 4%, 56% 3%, 63% 2%, 68% 5%, 78% 8%, 82% 13%, 89% 15%, 93% 24%, 93% 32%, 91% 38%, 96% 46%, 96% 56%, 98% 65%, 98% 65%, 96% 75%, 89% 80%, 86% 86%, 80% 90%, 78% 97%, 67% 98%, 60% 99%);
+            background-color: rgb(66,63,63);
+            z-index: 111110;
+            background-image: linear-gradient(to bottom, #FFFFFF,#686868, #505050);
+            }
+            .piatraLogo {
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 16px;
+            width: 170px;
+            height: 160px;
+            -webkit-box-shadow: inset 5px 34px 96px 18px rgba(232,229,232,1);
+            -moz-box-shadow: inset 5px 34px 96px 18px rgba(232,229,232,1);
+            box-shadow: inset 5px 34px 96px 18px rgba(232,229,232,1);
+            background-image: linear-gradient(to bottom, rgba(178,178,178), #D8D8D8);
+            clip-path: polygon(53% 100%, 42% 99%, 35% 100%, 28% 96%, 20% 93%, 16% 84%, 9% 79%, 9% 69%, 4% 65%, 6% 58%, 4% 50%, 1% 47%, 3% 36%, 7% 29%, 9% 20%, 15% 13%, 24% 12%, 30% 6%, 39% 1%, 46% 4%, 56% 3%, 63% 2%, 68% 5%, 78% 8%, 82% 13%, 89% 15%, 93% 24%, 93% 32%, 91% 38%, 96% 46%, 96% 56%, 98% 65%, 98% 65%, 96% 75%, 89% 80%, 86% 86%, 80% 90%, 78% 97%, 67% 98%, 60% 99%);
+            z-index: -111;
+            }
+            .literaS span{
+            font-family: Andale Mono, monospace;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            margin-top: -35px;
+            font-size: 190px;
+            background-color: #505050;
+            color: transparent;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            text-shadow: rgba(245, 245, 245, 0.5) 5px 10px 1px;
+            }
+            .literaG span{
+            font-family: "Arial Black", Gadget, sans-serif;
+            position: absolute;
+            margin-left: 30px;
+            margin-top:70px;
+            font-size: 40px;
+            background-color: #505050;
+            color: transparent;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            text-shadow: rgba(245, 245, 245, 0.5) 2px 3px 1px;
+            }
+            .literaW span{
+            font-family: "Arial Black", Gadget, sans-serif;
+            position: absolute;
+            margin-left: 110px;
+            margin-top:33px;
+            font-size: 37px;
+            background-color: #505050;
+            color: transparent;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            text-shadow: rgba(245, 245, 245, 0.5) 2px 3px 1px;
+            }
+            /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~  slider images  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+            .sliderBackImage {
+            margin-top: 800px;
+            background: linear-gradient(to top, rgba(255,255,255,0) 10%,
+            rgba(255,255,255,1)), url(imagini/shopping.jpg);
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+            height: 750px;
+            white-space: nowrap;
+            }
+            .sliderBackImage p {
+            margin-top: -50px;
+            position: absolute;
+            color: #00006e;
+            left: 50%;
+            transform: translate(-50%);
+            min-width: 440px;
+            font-size: 28px;
+            }
+            #slider {
+            margin-top: 800px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            width: 350px;
+            max-width: 100%;
+            text-align: center;
+            }
+            #slider input[type=radio] {
+            display: none;
+            }
+            #slider label {
+            cursor:pointer;
+            text-decoration: none;
+            }
+            #slides {
+            padding: 10px;
+            position: relative;
+            z-index: 1;
+            }
+            .slide-content h2 { margin-top: 30px; }
+            .slide-content p {
+            font-size: 22px;
+            margin-top: 30px;
+            }
+            #overflow {
+            width: 100%;
+            overflow: hidden;
+            }
+            .inner {
+            padding-bottom: 40px;
+            }
+            #slide1:checked ~ #slides .inner {
+            margin-left: 0;
+            }
+            #slide2:checked ~ #slides .inner {
+            margin-left: -100%;
+            }
+            #slide3:checked ~ #slides .inner {
+            margin-left: -200%;
+            }
+            #slide4:checked ~ #slides .inner {
+            margin-left: -300%;
+            }
+            #slides .inner {
+            transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+            width: 400%;
+            line-height: 0;
+            height: 350px;
+            }
+            #slides .slide {
+            width: 25%;
+            float:left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: #fff;
+            }
+            #slides .slide_1 {
+            filter: drop-shadow(5px 7px 9px black);
+            }
+            .primaImagine {
+            margin-top: 10px;
+            background-image: url(imagini/slider/ceas1.jpg);
+            background-size: 100% 100%;
+            -webkit-clip-path: polygon(50% 96%, 18% 91%, 14% 88%, 11% 85%, 8% 81%, 7% 77%, 5% 71%, 5% 66%, 10% 46%, 16% 31%, 23% 18%, 28% 13%, 32% 10%, 38% 7%, 44% 5%, 50% 4%, 63% 5%, 80% 7%, 85% 9%, 89% 12%, 91% 16%, 92% 21%, 93% 26%, 93% 31%, 91% 37%, 91% 40%, 62% 36%, 63% 33%, 64% 30%, 64% 27%, 64% 25%, 64% 22%, 64% 19%, 58% 27%, 56% 30%, 52% 39%, 49% 46%, 46% 54%, 44% 63%, 43% 71%, 42% 80%, 45% 78%, 46% 76%, 48% 74%, 49% 71%, 50% 68%, 51% 65%, 48% 63%, 51% 56%, 54% 47%, 57% 39%, 61% 38%, 62% 36%, 91% 40%, 90% 42%, 93% 44%, 90% 53%, 88% 59%, 86% 61%, 86% 63%, 84% 68%, 81% 70%, 78% 76%, 75% 81%, 72% 85%, 69% 89%, 65% 92%, 59% 95%);
+            clip-path: polygon(50% 96%, 18% 91%, 14% 88%, 11% 85%, 8% 81%, 7% 77%, 5% 71%, 5% 66%, 10% 46%, 16% 31%, 23% 18%, 28% 13%, 32% 10%, 38% 7%, 44% 5%, 50% 4%, 63% 5%, 80% 7%, 85% 9%, 89% 12%, 91% 16%, 92% 21%, 93% 26%, 93% 31%, 91% 37%, 91% 40%, 62% 36%, 63% 33%, 64% 30%, 64% 27%, 64% 25%, 64% 22%, 64% 19%, 58% 27%, 56% 30%, 52% 39%, 49% 46%, 46% 54%, 44% 63%, 43% 71%, 42% 80%, 45% 78%, 46% 76%, 48% 74%, 49% 71%, 50% 68%, 51% 65%, 48% 63%, 51% 56%, 54% 47%, 57% 39%, 61% 38%, 62% 36%, 91% 40%, 90% 42%, 93% 44%, 90% 53%, 88% 59%, 86% 61%, 86% 63%, 84% 68%, 81% 70%, 78% 76%, 75% 81%, 72% 85%, 69% 89%, 65% 92%, 59% 95%);
+            width: 161px;
+            height: 250px;
+            margin-left: 10px;
+            }
+            #slides .slide_2 {
+            filter: drop-shadow(5px 7px 9px black);
+            }
+            .aDouaImagine {
+            margin-top: 10px;
+            background-image: url(imagini/slider/tableta2.jpg);
+            background-size: 100% 100%;
+            -webkit-clip-path: polygon(97% 1%, 53% 4%, 53% 4%, 39% 63%, 40% 65%, 40% 68%, 37% 67%, 1% 77%, 1% 79%, 37% 100%, 39% 100%, 80% 84%, 82% 84%, 83% 82%, 85% 72%, 99% 76%, 100% 74%, 92% 41%, 99% 3%);
+            clip-path: polygon(97% 1%, 53% 4%, 53% 4%, 39% 63%, 40% 65%, 40% 68%, 37% 67%, 1% 77%, 1% 79%, 37% 100%, 39% 100%, 80% 84%, 82% 84%, 83% 82%, 85% 72%, 99% 76%, 100% 74%, 92% 41%, 99% 3%);
+            width: 300px;
+            height: 169px;
+            }
+            #slides .slide_3 {
+            filter: drop-shadow(5px 7px 9px #ff4719);
+            }
+            .aTreiaImagine {
+            margin-top: 10px;
+            background-image: url(imagini/slider/aspirator.jpg);
+            background-size: 100% 100%;
+            -webkit-clip-path: polygon(6% 100%, 7% 96%, 36% 96%, 36% 95%, 39% 93%, 39% 90%, 37% 85%, 33% 80%, 33% 75%, 31% 71%, 32% 64%, 32% 57%, 33% 52%, 35% 50%, 38% 47%, 43% 17%, 44% 11%, 45% 1%, 50% 0%, 53% 1%, 54% 11%, 55% 17%, 59% 46%, 61% 49%, 66% 52%, 66% 75%, 66% 79%, 64% 83%, 61% 86%, 59% 88%, 58% 93%, 61% 95%, 61% 96%, 89% 96%, 91% 100%);
+            clip-path: polygon(6% 100%, 7% 96%, 36% 96%, 36% 95%, 39% 93%, 39% 90%, 37% 85%, 33% 80%, 33% 75%, 31% 71%, 32% 64%, 32% 57%, 33% 52%, 35% 50%, 38% 47%, 43% 17%, 44% 11%, 45% 1%, 50% 0%, 53% 1%, 54% 11%, 55% 17%, 59% 46%, 61% 49%, 66% 52%, 66% 75%, 66% 79%, 64% 83%, 61% 86%, 59% 88%, 58% 93%, 61% 95%, 61% 96%, 89% 96%, 91% 100%);
+            width: 100px;
+            height: 300px;
+            margin-left: 80px;
+            }
+            #slides .slide_4 {
+            filter: drop-shadow(5px 7px 9px black);
+            }
+            .aPatraImagine {
+            margin-top: 10px;
+            background-image: url(imagini/slider/telefon2.jpg);
+            background-size: 100% 100%;
+            -webkit-clip-path: polygon(88% 1%, 12% 1%, 10% 2%, 8% 3%, 7% 5%, 6% 8%, 6% 94%, 7% 96%, 9% 98%, 11% 99%, 14% 100%, 88% 100%, 91% 99%, 93% 96%, 94% 94%, 94% 8%, 94% 5%, 93% 3%, 91% 2%);
+            clip-path: polygon(88% 1%, 12% 1%, 10% 2%, 8% 3%, 7% 5%, 6% 8%, 6% 94%, 7% 96%, 9% 98%, 11% 99%, 14% 100%, 88% 100%, 91% 99%, 93% 96%, 94% 94%, 94% 8%, 94% 5%, 93% 3%, 91% 2%);
+            width: 193px;
+            height: 250px;
+            margin-left: 10px;
+            }
+            #controls {
+            margin: -280px 0 0 -25px;
+            width: 400px;
+            height: 60px;
+            z-index: 3;
+            position: absolute;
+            }
+            #controls label {
+            transition: opacity 0.2s ease-out;
+            display: none;
+            width: 220px;
+            height: 60px;
+            opacity: .4;
+            }
+            #controls label:hover {
+            opacity: 1;
+            }
+            #slide1:checked ~ #controls label:nth-child(2),
+            #slide2:checked ~ #controls label:nth-child(3),
+            #slide3:checked ~ #controls label:nth-child(4),
+            #slide4:checked ~ #controls label:nth-child(1) {
+            background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+            background-position: right;
+            float:right;
+            margin: 0 -50px 0 0;
+            display: block;
+            }
+            #slide1:checked ~ #controls label:nth-last-child(1),
+            #slide2:checked ~ #controls label:nth-last-child(4),
+            #slide3:checked ~ #controls label:nth-last-child(3),
+            #slide4:checked ~ #controls label:nth-last-child(2) {
+            background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+            float:left;
+            margin: 0 0 0 -50px;
+            display: block;
+            }
+            #bullets {
+            text-align: center;
+            filter: drop-shadow(2px 3px 5px white);  
+            }
+            #bullets label {
+            display: inline-block;
+            margin: 0 10px;   
+            }
+            .primulSlide {
+            background-image: url(imagini/slider/ceas1.jpg);
+            background-size: 100% 100%;
+            -webkit-clip-path: polygon(50% 96%, 18% 91%, 14% 88%, 11% 85%, 8% 81%, 7% 77%, 5% 71%, 5% 66%, 10% 46%, 16% 31%, 23% 18%, 28% 13%, 32% 10%, 38% 7%, 44% 5%, 50% 4%, 63% 5%, 80% 7%, 85% 9%, 89% 12%, 91% 16%, 92% 21%, 93% 26%, 93% 31%, 91% 37%, 91% 40%, 62% 36%, 63% 33%, 64% 30%, 64% 27%, 64% 25%, 64% 22%, 64% 19%, 58% 27%, 56% 30%, 52% 39%, 49% 46%, 46% 54%, 44% 63%, 43% 71%, 42% 80%, 45% 78%, 46% 76%, 48% 74%, 49% 71%, 50% 68%, 51% 65%, 48% 63%, 51% 56%, 54% 47%, 57% 39%, 61% 38%, 62% 36%, 91% 40%, 90% 42%, 93% 44%, 90% 53%, 88% 59%, 86% 61%, 86% 63%, 84% 68%, 81% 70%, 78% 76%, 75% 81%, 72% 85%, 69% 89%, 65% 92%, 59% 95%);
+            clip-path: polygon(50% 96%, 18% 91%, 14% 88%, 11% 85%, 8% 81%, 7% 77%, 5% 71%, 5% 66%, 10% 46%, 16% 31%, 23% 18%, 28% 13%, 32% 10%, 38% 7%, 44% 5%, 50% 4%, 63% 5%, 80% 7%, 85% 9%, 89% 12%, 91% 16%, 92% 21%, 93% 26%, 93% 31%, 91% 37%, 91% 40%, 62% 36%, 63% 33%, 64% 30%, 64% 27%, 64% 25%, 64% 22%, 64% 19%, 58% 27%, 56% 30%, 52% 39%, 49% 46%, 46% 54%, 44% 63%, 43% 71%, 42% 80%, 45% 78%, 46% 76%, 48% 74%, 49% 71%, 50% 68%, 51% 65%, 48% 63%, 51% 56%, 54% 47%, 57% 39%, 61% 38%, 62% 36%, 91% 40%, 90% 42%, 93% 44%, 90% 53%, 88% 59%, 86% 61%, 86% 63%, 84% 68%, 81% 70%, 78% 76%, 75% 81%, 72% 85%, 69% 89%, 65% 92%, 59% 95%);
+            filter: grayscale(1);
+            width: 25px;
+            height: 40px;
+            }
+            .alDoileaSlide {
+            background-image: url(imagini/slider/tableta2.jpg);
+            background-size: 100% 100%;
+            -webkit-clip-path: polygon(97% 1%, 53% 4%, 53% 4%, 39% 63%, 40% 65%, 40% 68%, 37% 67%, 1% 77%, 1% 79%, 37% 100%, 39% 100%, 80% 84%, 82% 84%, 83% 82%, 85% 72%, 99% 76%, 100% 74%, 92% 41%, 99% 3%);
+            clip-path: polygon(97% 1%, 53% 4%, 53% 4%, 39% 63%, 40% 65%, 40% 68%, 37% 67%, 1% 77%, 1% 79%, 37% 100%, 39% 100%, 80% 84%, 82% 84%, 83% 82%, 85% 72%, 99% 76%, 100% 74%, 92% 41%, 99% 3%);
+            filter: grayscale(1);
+            width: 60px;
+            height: 33px;
+            }
+            .alTreileaSlide {
+            background-image: url(imagini/slider/aspirator.jpg);
+            background-size: 100% 100%;
+            -webkit-clip-path: polygon(6% 100%, 7% 96%, 36% 96%, 36% 95%, 39% 93%, 39% 90%, 37% 85%, 33% 80%, 33% 75%, 31% 71%, 32% 64%, 32% 57%, 33% 52%, 35% 50%, 38% 47%, 43% 17%, 44% 11%, 45% 1%, 50% 0%, 53% 1%, 54% 11%, 55% 17%, 59% 46%, 61% 49%, 66% 52%, 66% 75%, 66% 79%, 64% 83%, 61% 86%, 59% 88%, 58% 93%, 61% 95%, 61% 96%, 89% 96%, 91% 100%);
+            clip-path: polygon(6% 100%, 7% 96%, 36% 96%, 36% 95%, 39% 93%, 39% 90%, 37% 85%, 33% 80%, 33% 75%, 31% 71%, 32% 64%, 32% 57%, 33% 52%, 35% 50%, 38% 47%, 43% 17%, 44% 11%, 45% 1%, 50% 0%, 53% 1%, 54% 11%, 55% 17%, 59% 46%, 61% 49%, 66% 52%, 66% 75%, 66% 79%, 64% 83%, 61% 86%, 59% 88%, 58% 93%, 61% 95%, 61% 96%, 89% 96%, 91% 100%);
+            filter: grayscale(1);
+            width: 25px;
+            height: 60px;
+            }
+            .alPatruleaSlide {
+            background-image: url(imagini/slider/telefon2.jpg);
+            background-size: 100% 100%;
+            -webkit-clip-path: polygon(88% 1%, 12% 1%, 10% 2%, 8% 3%, 7% 5%, 6% 8%, 6% 94%, 7% 96%, 9% 98%, 11% 99%, 14% 100%, 88% 100%, 91% 99%, 93% 96%, 94% 94%, 94% 8%, 94% 5%, 93% 3%, 91% 2%);
+            clip-path: polygon(88% 1%, 12% 1%, 10% 2%, 8% 3%, 7% 5%, 6% 8%, 6% 94%, 7% 96%, 9% 98%, 11% 99%, 14% 100%, 88% 100%, 91% 99%, 93% 96%, 94% 94%, 94% 8%, 94% 5%, 93% 3%, 91% 2%);
+            filter: grayscale(1);
+            width: 38px;
+            height: 50px;
+            }
+            #slide1:checked ~ #bullets label:nth-child(1),
+            #slide2:checked ~ #bullets label:nth-child(2),
+            #slide3:checked ~ #bullets label:nth-child(3),
+            #slide4:checked ~ #bullets label:nth-child(4) {
+            filter: grayscale(0);
+            transform: scale(1.55);
+            transition: 0.5s;
+            }
+            @media screen and (max-width: 730px) {
+            #balantaClipPath {
+            margin-top: -20px;
+            margin-left: 20px;
+            width: 750px;}
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <title>Prospeţime şi culoare</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="Shortcut icon" href="imagini/favicon.ico">
+    </head>
+    <body>
+        <div class="umbraButonInapoi">
+            <div id="inapoiText" onclick="history.back()">
+                <p>Back</p>
+                <div id="butonInapoi"></div>
+            </div>
+        </div>
+        <div class="imagineBackground"></div>
+        <div id="navigare">
+            <nav>
+                <ul>
+                    <li><a href="../contact/formpage.html">Contact</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="titluMagazin">
+            <p>Online <span>Great and Wise Shopping!</span></p>
+        </div>
+        <div id="balanta">
+            <div id="butonBalanta">
+                <p>Hover !</p>
+            </div>
+            <div id="balantaClipPath"></div>
+            <div class="containerPiatraLogo">
+                <div class="piatraBaza">
+                    <div class="borduraPiatra1">
+                        <div class="borduraPiatra2">
+                            <div class="piatraLogo">
+                                <p class="literaS"><span>S</span></p>
+                                <p class="literaG">
+                                    <span>
+                                        <b>
+                                            G
+                                    </span>
+                                </p>
+                                <p class="literaW"><span>W</b></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="linieSus"></div>
+            <div id="talerStanga">
+                <div id="linieDreaptaStanga"></div>
+                <div id="linieOblicaStanga1"></div>
+                <div id="linieOblicaStanga2"></div>
+                <div id="cantarStanga"></div>
+            </div>
+            <div id="talerDreapta">
+                <div id="linieDreaptaDreapta"></div>
+                <div id="linieOblicaDreapta1"></div>
+                <div id="linieOblicaDreapta2"></div>
+                <div id="cantarDreapta">
+                    <div class="magazine"></div>
+                </div>
+            </div>
+            <div id="balantaLinii">
+                <div class="linieVerticalaMijloc"></div>
+                <div class="linieJos1"></div>
+                <div class="linieJos2"></div>
+            </div>
+        </div>
+        <div class="sliderBackImage">
+            <p>Here is just few offers from our shopp:</p>
+        </div>
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+                            <div class="slide-content">
+                                <div class="primaImagine"></div>
+                                <h2>Smart Watch #</h2>
+                                <p>Price ## (-22%)</p>
+                            </div>
+                        </div>
+                        <div class="slide slide_2">
+                            <div class="slide-content">
+                                <div class="aDouaImagine"></div>
+                                <h2>Tablet #</h2>
+                                <p>Price ### (-18%)</p>
+                            </div>
+                        </div>
+                        <div class="slide slide_3">
+                            <div class="slide-content">
+                                <div class="aTreiaImagine"></div>
+                                <h2>Vertical Vacuum Cleaner #</h2>
+                                <p>Price ### (-31%)</p>
+                            </div>
+                        </div>
+                        <div class="slide slide_4">
+                            <div class="slide-content">
+                                <div class="aPatraImagine"></div>
+                                <h2>Phone #</h2>
+                                <p>Price ## (-35%)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+                <label class="primulSlide" for="slide1"></label>
+                <label class="alDoileaSlide" for="slide2"></label>
+                <label class="alTreileaSlide" for="slide3"></label>
+                <label class="alPatruleaSlide" for="slide4"></label>
+            </div>
+        </div>
+        <script>
+            function changeButton1() {
+                // document.getElementById("butonInapoi").innerHTML = "salutare";
+            // if (document.referrer == window.location.href ="../alb/index.html")
+             // if (document.referrer == "../culori/alb") 
+             if (document.referrer == "file:///C:/Users/Don/Desktop/copie2%20culori/alb/index.html)") 
+             { 
+                // document.getElementById("butonInapoi").innerHTML = "Back to White color";
+            
+            // } else  if (document.referrer.href == "file:///C:/Users/Don/Desktop/copie2%20culori/alb/index.html"){
+            //     document.getElementById("butonInapoi").innerHTML = "Back to your color";
+            } else {
+                 // history.back()
+            }
+            }
+        </script>
+    </body>
+</html>

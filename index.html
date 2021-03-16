@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Află mai multe despre tine, despre caracterul tău, alegând culoarea preferată.">
+	<meta name="keywords" content="culori, colors, autocunoastere, despre tine, psihologia culorilor">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<title>Prospeţime şi culoare</title>
+	<link rel="stylesheet" type="text/css" href="css/culori.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<link href='https://fonts.googleapis.com/css?family=Kranky' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Diplomata' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Shojumaru' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Holtwood One SC' rel='stylesheet'>
+	<link rel="Shortcut icon" href="imagini/favicon.ico"> </head>
+
+<body>
+	<div id="container_sus">
+		<div id="container_sus_doi">
+			<!-- navigare meniu unu -->
+			<div id="ContainerNavigareAnimata">
+				<div id="butonLupa"><span>Search</span>
+					<div id="lupa"></div>
+				</div>
+				<div id="containerCasa">
+					<div id="butonCasa"><span>Home</span>
+						<div class="casa"></div>
+					</div>
+				</div>
+				<div id="setari">
+					<div id="butonSetari"><span>Settings</span>
+						<div class="linie1"></div>
+						<div class="linie2"></div>
+						<div class="linie3"></div>
+						<div class="oval1"></div>
+						<div class="oval2"></div>
+						<div class="oval3"></div>
+					</div>
+				</div>
+				<div id="containerCompari">
+					<div class="butonCompari"><span>Analyze</span>
+						<div id="compariUnu"></div>
+						<div id="compariDoi"></div>
+						<div id="compariTrei"></div>
+					</div>
+				</div>
+				<div id="containerChat">
+					<div id="butonChat"><span>Chat</span>
+						<div class="chatUnu"></div>
+						<div id="iconChat"><span>☺</span></div>
+					</div>
+				</div>
+				<div id="containerShoppingCart">
+					<div class="butonCart"><span>Cart</span>
+						<div class="cutiaUnu"></div>
+						<div class="cutiaDoi"></div>
+						<div class="cutiaTrei"></div>
+						<div class="shoppingCart"></div>
+						<div class="roataStanga"></div>
+						<div class="roataDreapta"></div>
+					</div>
+				</div>
+				<div class="containerPathMesaj">
+					<div id="containerMesaj">
+						<div id="butonMesaj">
+							<!-- <a href="contact/formpage.html"> --><span>Contact</span>
+							<div class="mesaj"></div>
+						</div>
+					</div>
+				</div>
+				<div id="containerUmbraUsa"> <span>Exit</span>
+					<!-- <div class="butonExit"><span>Exit</span></div> -->
+					<div class="ramaUsa"></div>
+					<div class="capOm"></div>
+					<div class="omFugind"></div>
+					<div class="usa"><b>Exit</b></div>
+				</div>
+			</div>
+			<!-- navigare meniu doi -->
+			<div id="navigare">
+				<div id="navigareFundal"></div>
+				<nav>
+					<ul>
+						<li id="navigareUnu"><a href="#" style="color:#82b1ff;">Home</a></li>
+						<li id="navigareDoi"><a href="#">Blog</a></li>
+						<li id="navigareTrei"><a href="#">Help</a></li>
+						<li id="navigarePatru"><a href="#">Projects</a></li>
+						<li id="navigareCinci"><a href="#">Login</a></li>
+						<li id="navigareSase"><a href="contact/formpage.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="variantaDoi" onclick="dispare_pe_rand_navigare_animata(); apare_pe_rand_navigare();"><b>v. 2</b></div>
+			<div id="variantaUnu" onclick="dispare_pe_rand_navigare(); setTimeout(apare_pe_rand_navigare_animata, 1800);"><b>v. 1</b></div>
+			<div id="arata-navigare" onclick="setTimeout(apare_pe_rand_navigare_animata, 500); ">
+				<p> Navigation Menu</p>
+				<div clas="container-liniute">
+					<div id="linie-nav1" onclick="linia1();"></div>
+					<div id="linie-nav2" onclick="linia2();"></div>
+					<div id="linie-nav3" onclick="linia3();"></div>
+				</div>
+			</div>
+			<div id="ascunde-navigare" onclick=" dispare_pe_rand_navigare_animata(); dispare_pe_rand_navigare()"><span id="semnX">&#x2718</span>
+				<p> Navigation Menu</p>
+			</div>
+			<!-- text care apare doar la rezolutie mare -->
+			<div id="primul_text_sus">
+				<p><b> Welcome ! </p>
+        		<p> Be fresh and have a life full of colors ! </p></b>         		
+    		</div>
+			<!-- apare doar la imaginile 7 si 8 stanga -->
+
+			<div id="container_patrate_stanga">
+				<div class="patrate_stanga">
+					<div class="imagine_stanga" onclick="change1();" style="background-image: url(imagini/70-2.jpg);"> <b> 50% of image </b></div>
+					<div class="imagine_intreaga" onclick="change1full();"><b>Change 100%</b></div>
+				</div>
+				<div class="patrate_stanga">
+					<div class="imagine_stanga" onclick="change2();" style="background-image: url(imagini/51-2.jpg);"> <b> 50% of image  </b></div>
+					<div class="imagine_intreaga" onclick="change2full();"><b>Change 100% </b></div>
+				</div>
+				<div class="patrate_stanga">
+					<div class="imagine_stanga" onclick="change3();" style="background-image: url(imagini/36.jpg);"> <b> 50% of image  </b></div>
+					<div class="imagine_intreaga" onclick="change3full();"><b>Change 100% </b></div>
+				</div>
+				<div class="patrate_stanga">
+					<div class="imagine_stanga" onclick="change4();" style="background-image: url(imagini/31mic.jpg);"> <b> 50% of image  </b></div>
+					<div class="imagine_intreaga" onclick="change4full();"><b>Change 100% </b></div>
+				</div>
+				<div class="patrate_stanga">
+					<div class="imagine_stanga" onclick="change5();" style="background-image: url(imagini/13.jpg);"> <b> 50% of image  </b></div>
+					<div class="imagine_intreaga" onclick="change5full();"><b>Change 100% </b></div>
+				</div>
+				<div class="patrate_stanga">
+					<div class="imagine_stanga" onclick="change6();" style="background-image: url(imagini/34.jpg);"> <b> 50% of image  </b></div>
+					<div class="imagine_intreaga" onclick="change6full();"><b>Change 100% </b></div>
+				</div>
+				<div class="patrate_stanga">
+					<div id="imagine_stanga7" onclick="change7full(); textSchimbaImagine();" style="background-image: url(imagini/ur/urs1.jpg);"> <b> Your Image </b><b> here ! </b></div>
+				</div>
+				<div class="patrate_stanga">
+					<div id="imagine_stanga8" onclick="change8full(); textSchimbaImagine();" style="background-image: url(imagini/ur/urs33.jpg);"> <b> Your Image </b><b> here ! </b></div>
+				</div>
+				<!-- sfarsit de container_patrate_stanga -->
+			</div>
+			<div id="butonPatrate" onclick="buton_arata_si_ascunde_imagini_stanga(); ">
+				<p>Show Images</p>
+			</div>
+			<div id="container_hide"></div>
+			<!-- sfarsit de container_sus_doi -->
+		</div>
+		<!-- mesaj info pentru schimba imaginea background-->
+				<div id="container_informatii">
+
+			<div id="containerTextSchimba">
+				<div id="textSchimbaImaginea">
+					<p> Your best landscape
+						<br> in background !</p>
+				</div> <i class="fa fa-info-circle"></i>				
+			
+				<div id="containerPointerSiInfromatii">
+					<div id="container_pointer">
+						<div class="container_figuri_pointer">
+							<div class="energie_triunghi_sus"></div>
+							<div class="energie_dreptunghi"></div>
+							<div class="energie_triunghi_baza"></div>
+						</div>
+					</div>
+					<div id="text_informatii">
+						<div class="text-photo">
+							<p style="text-indent: 20px;"> Send us your favorite landscape/background photo and you might see it on our website in:<span style="color: black;"> Your Image here!</span> photos.</p>
+							<p style="text-indent: 20px;"> Upload your photo in a message in our Contact/Mail Contact section <a href="contact/formpage.html#header-contact" style="text-decoration: underline;"><b>here.</b></a></p>
+						</div>
+					</div>
+					<!-- sfarsit de containerPointerSiInfromatii -->
+				</div>
+
+					</div>
+				</div>
+		<div class="pamantImagineSus"></div>
+		<!-- sfarsit de container_sus -->
+	</div>
+	<div id="navigare_fix">
+		<a href="#"><div class="intoarceTop"></div></a>
+		<div class="contactFix">
+			<a href="contact/formpage.html"> <i class="fa fa-envelope" style="font-size:18px;"></i> </a>
+		</div> 
+	</div>
+
+	<div id="container_mijloc">
+		<div class="mijloc">
+			<div id="imagineText">
+				<div class="imagineGri unu"></div>
+			</div>
+			<div class="text"></div>
+			<div class="container_citate">
+				<div class="container_notita_vant">
+					<div class="patrat_spate_notita_vant"></div>
+					<div class="citat1" data-tooltip="Sentimentul colorează,...">
+						<div class="notita_vant" onclick="stiati1();"><a href="citate/2.jpg" style="color: #1a1a1a;"><h5>Citat 1</h5></a></div>
+					</div>
+				</div>
+				<div class="container_notita_vant">
+					<div class="patrat_spate_notita_vant"></div>
+					<div class="citat2" data-tooltip="Omul:...">
+						<div class="notita_vant" onclick="stiati2();"><a href="citate/1.png" style="color: #1a1a1a;"><h5>Citat 2</h5></a></div>
+					</div>
+				</div>
+				<div class="container_notita_vant">
+					<div class="patrat_spate_notita_vant"></div>
+					<div class="citat3" data-tooltip="Sufletul e ca...">
+						<div class="notita_vant" onclick="stiati3();"><a href="citate/3.png" style="color: #1a1a1a;"><h5>Citat 3</h5></a></div>
+					</div>
+				</div>
+				<div class="container_notita_vant">
+					<div class="patrat_spate_notita_vant"></div>
+					<div class="citat4" data-tooltip="Culorile sunt...">
+						<div class="notita_vant" onclick="stiati4();"><a href="citate/4.png" style="color: #1a1a1a;"><h5>Citat 4</h5></a></div>
+					</div>
+				</div>
+				<div class="container_notita_vant">
+					<div class="patrat_spate_notita_vant"></div>
+					<div class="citat5" data-tooltip="Fiecare...">
+						<div class="notita_vant" onclick="stiati5();"><a href="citate/5.png" style="color: #1a1a1a;"><h5>Citat 5</h5></a></div>
+					</div>
+				</div>
+			</div>
+			<!-- sfarsit de  mijloc -->
+		</div>
+		<h4 style="text-align: center;">
+			<p>Cum ar fi viața noastră în alb și negru?</p><br>
+		</h4>
+		<div class="text_culorile">
+			<h2 id="despreCulori"><b> CULORILE </b></h2> </div>
+		<h4 class="p2">-sunt un ingredient important care pot crea anumite stări de spirit, pot crea emoții, ne pot
+		influența în ceea ce simțim sau facem, având impact şi asupra psihicului nostru.<br>
+		 ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎Ele sunt atent alese în
+		marketing, la logo-uri, branduri, pe panourile publicitare şi în magazine.<br> 
+		 ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎Culorile pe care le alegem în vestimentația noastră pot "vorbi" despre noi, aşa cum putem alege culori care să ne influențeze pozitiv în viața de zi cu zi: în casă sau la serviciu.<br>
+				 ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎Mai multe informaţii despre culori <a href="index.html#descriere-proiect-romana" style="color: #592100;" onclick="aparInformatiiDespreCulori()">
+				 	<span>aici</span></a>. </h4>
+		<!-- sfarsit de  container_mijloc -->
+	</div>
+	<!-- mai multe detalii despre culori -->
+	<div id="descriere-proiect-romana">
+		<div id="tradu-romana">
+			<p id="text-romana">Tradu în română</p>
+		</div>
+		<p>More about <code>'The Colors'</code> </p>
+		<br>
+		<p>Generally, certain colors carry certain feelings, states or emotions. Each color has (from a physical point of view) a certain frequency, a certain segment (spectrum) and provide a certain energy that the human psyche and human perception (which differs from one person to another) can 'read' or perceive differently.</p>
+		<p><code>The Colors</code> were and are used to change, accentuate, create or even experience in order to live certain feelings. That is why they have a practical application in:</p>
+		<p>-therapeutic purpose: art-therapy and crhomotherapy; </p>
+		<p>-marketing: store, shopping malls, publicity, advertizing, logos;</p>
+		<p>-videos, games, movies;</p>
+		<p>-theaters, relaxation rooms.</p>
+		<br>
+		<p>We have two broad categories of colors, depending on what they express:</p>
+		<p>1. Warm colors: <span style="color: red">Red</span>, <span style="color: #d9d917">Yellow</span> and <span style="color: orange">Orange</span> which generally transmit emotions of energy, calm, warmth.</p>
+		<p>2. Cold colors: <span style="color: blue">Blue</span>, <span style="color: violet">Violet</span> and <span style="color: #2ec22e">Green</span> which generally transmit emotions of serenity, freshness, fertility.</p>
+		<p>To be in tandem with <code>The colors</code> it means nothing more than knowing, feeling and matching them with our personality to live and express certain feelings.</p>
+		<p>To be a <code>'colorful'</code>man represents a quality and it does not mean to dress as a <code> rainbow </code>, but to know how to combine qualities with a positive thinking, to wich you add diversity and freshness to your everyday life.</p>
+		<p>To see the colors mentioned above, it would be good to reflect on Charlie Chaplin's quote: "You will never see a rainbow if you just look down."</p>
+		<p>I advice you to experience and feel the vibrations and emotions of colors, but also to see <code> 'The colors' </code> of the people around you.</p>
+	</div>
+	<div id="descriere-proiect-engleza">
+		<div id="tradu-engleza">
+			<p id="text-engleza">Translate into English</p>
+		</div>
+		<p><code>Culorile</code> </p>
+		<br>
+		<p>În general, anumite culori transmit anumite sentimente, stări sau emoţii. Fiecare culoare are, din punct de vedere fizic, o anumită lungime de undă, un anumit segment(spectru) şi transmite o anumită energie pe care psihicul şi percepţia umană o poate 'citi' sau percepe diferit.</p>
+		<p><code>Culorile</code> au fost şi sunt folosite în scopul de a crea, a accentua sau a trăi anumite stări psihice sau emoţionale, și sunt folosite în:</p>
+		<p>-scop terapeutic: art-terapia şi cromoterapia; </p>
+		<p>-marketing: magazine, mall-uri, publicităţi, log-ouri ale firmelor;</p>
+		<p>-videoclipuri, jocuri, filme;</p>
+		<p>-săli de teatru, de relaxare.</p>
+		<br>
+		<p>Sunt două mari categorii de culori, având în vedere ceea ce exprimă ele:</p>
+		<p>1. Culori calde: <span style="color: red">Roşu</span>, <span style="color: #d9d917">Galben</span> şi <span style="color: orange">Portocaliu</span> care transmit în mod general emoţii de energie, calm, căldură.</p>
+		<p>2. Culori reci: <span style="color: blue">Albastru</span>, <span style="color: violet">Violet</span> şi <span style="color: #2ec22e">Verde</span> care transmit emoţii de seninătate, prospeţime, fertilitate.</p>
+		<p>A fi în tandem cu <code>'Culorile'</code> nu înseamnă altceva decât a le cunoaşte, a le simţi şi a le asorta cu personalitatea noastră pentru a trăi şi exprima anumite sentimente.</p>
+		<p>A fi un om <code>'colorat'</code> este o calitate şi nu înseamnă să te îmbraci în toate culorile şi să fii un <code>curcubeu</code>, ci să ştii să îmbini calităţile cu o stare pozitivă, la care să adaugi diversitate şi prospeţime în viaţa de zi cu zi.</p>
+		<p>Ca să vedem culorile, ar fi bine să reflectăm şi la citatul lui Charlie Chaplin: "Nu vei zări niciodata un curcubeu daca te uiţi numai în jos."</p>
+		<p>Vă îndemn să trăiţi şi să simţiţi vibraţiile şi emoţiile culorilor, dar şi să vedeţi <code>'culorile'</code> din oamenii din jurul vostru.</p>
+	</div>
+
+	<!-- alege culoarea favorita -->
+	<div id="intrebareCuloare">
+		<h3>Tu ce culoare preferi / te reprezintă?</h3></div>
+	<div class="mijloc_doi">
+		<div class="culori_imagine">
+			<div id="container_culori">
+				<div class="pentru_culori">
+					<a class="rosu" href="rosu/rosu.html"></a> <a class="adresa_rosu" href="rosu/rosu.html"><b
+						style="color: #d62929; text-shadow: 2px 1px 3px black;">Roşu</b></a> </div>
+				<a class="roz" href="roz/roz.html"></a>
+				<div class="adresa_roz"><a href="roz/roz.html"><b
+						style="color: #FF69B4; text-shadow: 2px 1px 3px black;">Roz</b></a> </div>
+				<a class="portocaliu" href="portocaliu/portocaliu.html"></a>
+				<div class="adresa_portocaliu"> <a href="portocaliu/index.html"><b
+						style="color: #ff5700; text-shadow: 2px 1px 3px black;">Portocaliu</b></a> </div>
+				<a class="galben" href="galben/galben.html"></a>
+				<div class="adresa_galben"> <a href="galben/index.html"><b
+						style="color: #FFFF00; text-shadow: 2px 1px 3px black;">Galben</b></a> </div>
+				<a class="alb" href="alb/alb.html"></a>
+				<div class="adresa-alb"><a href="alb/index.html"><b
+						style="color: white; text-shadow: 3px 2px 2px black;">Alb</b></a> </div>
+				<a class="verde" href="verde/verde.html"></a>
+				<div class="adresa-verde"><a href="verde/index.html"><b
+						style="color: #0d6b08; text-shadow: 2px 1px 3px black;">Verde</b></a> </div>
+				<a class="albastru" href="albastru/albastru.html"></a>
+				<div class="adresa_albastru"><a href="albastru/index.html"><b
+						style="color: #141475; text-shadow: 2px 1px 3px black;">Albastru</b></a> </div>
+				<a class="violet" href="violet/violet.html"></a>
+				<div class="adresa_violet"><a href="violet/index.html"><b
+						style="color: #D400FF; text-shadow: 2px 1px 2px black;">Violet</b></a> </div>
+				<a class="maro" href="maro/maro.html"></a>
+				<div class="adresa_maro"><a href="maro/index.html"><b
+						style="color: #91300d; text-shadow: 2px 1px 3px black;">Maro</b></a> </div>
+				<a class="gri" href="gri/gri.html"></a>
+				<div class="adresa_gri"><a href="gri/index.html"><b
+						style="color: #484848; text-shadow: 2px 1px 2px black;">Gri</b></a>
+					<br> </div>
+				<a class="negru" href="negru/negru.html"></a>
+				<div class="adresa_negru"><a href="negru/index.html"><b
+						style="color: black; text-shadow: 2px 1px 2px #756F6F;">Negru</b></a>
+					<br> </div>
+			</div>
+			<!-- sfarsit de  culori_imagine -->
+		</div>
+		<!-- sfarsit de  mijloc_doi -->
+	</div>
+
+	<!-- sectiunea de jos (footer-ul) -->
+	<div class="jos">
+		<div class="adrese_stanga">
+			<ol class="adrese">
+				<li class="primul"><a class="underline">Privacy Policy</a></li>
+				<li><a class="underline">Terms of Use</a></li>
+				<li><a class="underline">Cookies</a></li>
+			</ol>
+		</div>
+		<h5>You can find / follow us on:</h5>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  schimba iconitele contact media  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  prima serie de butoane -->
+		<div id="containerButoane1">
+			<a class="butoaneUnu facebook" href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i></a>
+			<a class="butoaneUnu twitter" href="https://twitter.com/"> <i class="fab fa-twitter"></i> </a>
+			</a>
+			<a class="butoaneUnu instagram" href="https://www.instagram.com/"> <i class="fab fa-instagram"></i> </a>
+			<a class="butoaneUnu linkedin" href="https://www.linkedin.com/in/constantin-av%C4%83d%C4%83nei-31a54a182/"> <i class="fab fa-linkedin"></i> </a>
+			</a>
+			<a class="butoaneUnu whatsapp" href="https://www.whatsapp.com/"> <i class="fab fa-whatsapp"></i> </a>
+			<a class="butoaneUnu skype" href="https://www.skype.com/en/"> <i class="fab fa-skype"></i> </a> <span class="apareTextFacebook">facebook</span> <span class="apareTextTwitter">twitter</span> <span class="apareTextInstagram">instagram</span> <span class="apareTextLinkedin">linkedin</span> <span class="apareTextWhatsapp">whatsapp</span> <span class="apareTextSkype">skype</span>
+			<div id="schimbaButoaneUnu"><b>var. 2</b></div>
+		</div>
+		<!-- a 2-a serie de butoane -->
+		<div id="containerButoane2">
+			<!--  butoanele media -->
+			<a class="butoaneDoi facebookDoi" href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i> <span class="tooltipFacebook">facebook</span> </a>
+			<a class="butoaneDoi twitterDoi" href="https://twitter.com/"> <i class="fab fa-twitter"></i> <span class="tooltipTwitter">twitter</span> </a>
+			<a class="butoaneDoi instagramDoi" href="https://www.instagram.com/"> <i class="fab fa-instagram"></i> <span class="tooltipInstagram">instagram</span> </a>
+			<a class="butoaneDoi linkedinDoi" href="https://www.linkedin.com/in/constantin-av%C4%83d%C4%83nei-31a54a182/"> <i class="fab fa-linkedin"></i> <span class="tooltipLinkedin">linkedin</span> </a>
+			<a class="butoaneDoi whatsappDoi" href="https://www.whatsapp.com/"> <i class="fab fa-whatsapp"></i> <span class="tooltipWhatsapp">whatsapp</span> </a>
+			<a class="butoaneDoi skypeDoi" href="https://www.skype.com/en/"> <i class="fab fa-skype"></i> <span class="tooltipSkype">skype</span> </a>
+			<div id="schimbaButoaneDoi"><b>var. 1</b></div>
+		</div>
+		<div class="text-jos">
+			<!-- <div class="sapcaPolitie"></div> -->
+			<p> ❏ Made by: Avădănei Constantin.​​‍‍‎‎‌ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎<span class="sapcaPolitie"></span> ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎All rights reserved &copy; 2020.
+				<br> <i class="fa fa-envelope-o" style="font-size:13px"></i> G-mail adress: avadanei.constantin85@gmail.com</p>
+		</div>
+		<!-- sfarsit de  jos -->
+	</div>
+	<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  meniu informatii stanga  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<div class="informatiiStanga">
+		<div class="titluInformatii">
+			<p><b>The colors in our life</p>
+							</div>
+							<div class="linieVerticalaStangaTitlu"></div>
+							<div class="linieOblicaStangaTitlu"></div>
+
+							<div class="abonament texteStanga">
+								<p>Work</p>
+								<div class="linieStanga2"></div>
+								<div class="linieDedesubt2"></div>
+							</div>
+							
+							<div class="transport texteStanga">
+								<p>Home</p>
+								<div class="linieStanga2"></div>
+								<div class="linieDedesubt2"></div>
+							</div>
+
+							<div class="schimbare texteStanga">
+								<p>Dressing</p>
+								<div class="linieStanga2"></div>
+								<div class="linieDedesubt2"></div>
+							</div>
+
+							<div class="returnare texteStanga">
+								<p>Emotions</p>
+								<div class="linieStanga2"></div>
+								<div class="linieDedesubt2"></div>
+							</div>						
+						</div>
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ dreapta  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<div class="informatiiDreapta">
+							<div class="titluInformatii">
+								<p>The colors in the World</p>
+							</div>
+							<div class="linieVerticalaStangaTitlu"></div>
+							<div class="linieOblicaStangaTitlu"></div>
+
+							<div class="abonament texteStanga">
+								<p>Advertising</p>
+								<div class="linieStanga2"></div>
+								<div class="linieDedesubt2"></div>
+							</div>
+							<div class="transport texteStanga">
+								<p>Logos</p>
+								<div class="linieStanga2"></div>
+								<div class="linieDedesubt2"></div>
+							</div>
+
+							<div class="schimbare texteStanga">
+								<p>Marketing</p>
+								<div class="linieStanga2"></div>
+								<div class="linieDedesubt2"></div>
+							</div>
+
+							<div class="returnare texteStanga">
+								<p>Fashion</p>
+								<div class="linieStanga2"></div>
+								<div class="linieDedesubt2"></div>
+							</div>
+
+							<div class="suna texteStanga">
+								<p>Animations</p>
+								<div class="linieStanga2"></div>
+								<div class="linieDedesubt2"></div>
+							</div>
+
+							<div class="suna texteStanga">
+								<p>Games</b></p>
+			<div class="linieStanga2"></div>
+			<div class="linieDedesubt2"></div>
+		</div>
+	</div>
+	<script src="js/culori.js"></script>
+</body>
+
+</html>

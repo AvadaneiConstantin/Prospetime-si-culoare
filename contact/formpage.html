@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Prospeţime şi culoare</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="Shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+<body>
+    <meta charset="UTF-8">
+    <div id="navigare">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <div class="luminitaJos"></div>
+    </div>
+    <div id="navigare_fix">
+        <a href="#">
+            <div class="intoarceTop"></div>
+        </a>
+        <div class="homeFix">
+            <a href="../index.html"> <i class="fa fa-home" style="font-size:24px;"></i> </a>
+        </div>
+    </div>
+    <div class="containerSubmitForm">
+        <div id="header-contact">
+            <h1>Contact me</h1>
+            <p>"The future belongs to those who make wise decisions today."
+                <br>(Avădănei Constantin)
+            </p>
+        </div>
+        <div id="form-main">
+            <div id="form-div">
+                <form class="montform" id="reused_form">
+                    <p class="name">
+                        <input name="name" type="text" class="feedback-input" style="text-transform: uppercase;" required placeholder="Name" id="name" /> 
+                    </p>
+                    <p class="email">
+                    <div class="imagine-mesaj"></div>
+                    <input name="email" type="email" required class="feedback-input" id="email" placeholder="E-mail" /> </p>
+                    <p class="text">
+                    <div class="imagine-submit"></div>
+                    <textarea name="message" class="feedback-input" id="comment" placeholder="Message"></textarea>
+                    </p>
+                    <div id="submit">
+                        <button type="submit" class="button-blue" onclick="buton(); mesaj();">SEND</button>
+                    </div>
+                    <div class="adresa-mail">
+                        <p>Contact G-Mail <span>⤵</span></p>
+                    </div>
+                    <div class="ease">
+                        <p> avadanei.constantin85@gmail.com </p>
+                        <!-- <div id="mesajCadere"><i class="fa fa-envelope-o"></i></div> -->
+                    </div>
+                    <div class="map"></div>
+                </form>
+            </div>
+            <div id="error_message" style="width:100%; height:100%; display:none; ">
+                <h4>
+                    Error
+                </h4>
+                Sorry there was an error sending your form. 
+            </div>
+            <div id="success_message" style="width:100%; height:100%; display:none; ">
+                <h2>Success! Your Message was Sent Successfully.</h2>
+            </div>
+        </div>
+    </div>
+    <!-- onclick=" maresteImagineaSiMesaj(); " -->
+    <div id="containerImagineSiMesaj">
+        <div id="butonInchidereContainerMare" onclick=" micsoreazaImagineaSiMesaj();">&#x2718</div>
+        <div id="mesajLangaImagine" onclick=" maresteImagineaSiMesaj();">MORE
+            <br> ABOUT
+            <br> ME
+        </div>
+        <div id="despreMine">innovative and higly creative
+            <br> investigative and critical thinking
+            <br> deep dive to find best soluions
+            <br> pay attention to how things work           
+            <br> wide range of ideas
+            <br> patience and attention to graphic details
+        </div>
+        <div id="citatDespreMine">..perfection is not good enough </div>
+        <div class="containerImaginePersonala">
+            <div id="containerPentruImagineClipPath"> <img src="images/eu3.png"> </div>
+            <div id="containerPentruImagineClipPathDoi"> <img src="images/eu3.png"> </div>
+        </div>
+        <!-- ~~~~~~~~~~~~~~~~ sfarsit de containerImagineSiMesaj -->
+    </div>
+    <!--   ~~~~~~~~~~~~~~~~~~~~~~~~~ partea de jos a paginii  ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="sectiuneaDeJos">
+        <div class="adrese_stanga">
+            <ol class="adrese">
+                <li class="primul"><a class="underline">Privacy Policy</a></li>
+                <li><a class="underline">Terms of Use</a></li>
+                <li><a class="underline">Cookies</a></li>
+            </ol>
+        </div>
+        <div class="butoane-media">
+            <a class="btn" href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i></a>
+            <a class="btn" href="https://twitter.com/"> <i class="fab fa-twitter"></i> </a>
+            </a>
+            <a class="btn" href="https://www.instagram.com/"> <i class="fab fa-instagram"></i> </a>
+            <a class="btn" href="https://www.linkedin.com/in/constantin-av%C4%83d%C4%83nei-31a54a182/"> <i class="fab fa-linkedin"></i> </a>
+            </a>
+            <a class="btn" href="https://www.whatsapp.com/"> <i class="fab fa-whatsapp"></i> </a>
+            <a class="btn" href="https://www.skype.com/en/"> <i class="fab fa-skype"></i> </a>
+        </div>
+        <div class="rezumat-proiect">
+            <div class="banda-deasupra"></div>
+            <div class="text-proiect">
+                <h3> "Freshness and color"</h3>
+                <p>The project started in 2019 with my desire to help the others in many ways. </p>
+                <p style="margin-left: 2px;"> Firstle, to make them better acknowledge themselves by promoting their ability to "talk" through colors and theyr capacity to express how they feel when using them. </p>
+                <p style="margin-left: 2px;"> Secondly, to make a better connection between the chosen colors and theyr personality for a better personal(inside) balance. </p>
+            </div>
+            <div class="banda-dedesupt"></div>
+        </div>
+        <div class="text-jos">
+            <div class="sapcaPolitie"></div>
+            <p> ❏ Made by: Avădănei Constantin.​​‍‍‎‎‌ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎<span>All rights reserved &copy; 2020.</span> 
+        </div>
+        <!-- sfarsit de sectiuneaDeJos -->
+    </div>
+
+    
+
+    <!-- javascript code -->
+    <script>
+const latimeTelefon = window.matchMedia("(max-width: 1000px)");
+
+// imaginile din stanga, care au functii pe 50%(change1) si 100%(changeFull)
+function maresteImagineaSiMesaj() {
+    if (latimeTelefon.matches) {
+        document.getElementById("containerImagineSiMesaj").style.cssText = " width: 680px; height: 450px; margin-top: 120px; z-index: 11;border: 12px solid rgb(220,220,230); ";
+        document.getElementById("containerPentruImagineClipPath").style.display = "none";
+        document.getElementById("mesajLangaImagine").style.display = "none";
+        document.getElementById("containerImagineSiMesaj").style.background = "white";
+        document.getElementById("despreMine").style.cssText = " left: 35px; line-height: 50px; font-size: 19px;top: 15px;";
+        document.getElementById("citatDespreMine").style.cssText = " left: 7%; bottom: 20px; font-size: 25px;";
+        document.getElementById("containerPentruImagineClipPath").style.right = "5px";
+        setTimeout(function () {
+            document.getElementById("containerPentruImagineClipPathDoi").style.display = "inline";
+            document.getElementById("containerPentruImagineClipPathDoi").style.right = "-5px";
+            document.getElementById("citatDespreMine").style.whiteSpace = "initial";
+        }, 400);
+        setTimeout(function () {
+            document.getElementById("header-contact").style.cssText = "width :702px; box-shadow: 0 0 0 #909090;";
+        }, 300);
+        setTimeout(function () {
+            document.getElementById("despreMine").style.display = "inline";
+            document.getElementById("butonInchidereContainerMare").style.display = "inline";
+        }, 500);
+        setTimeout(function () {
+            document.getElementById("citatDespreMine").style.display = "inline";
+        }, 500);
+    } else {
+        // valabil pentru o latime a ecranului mai mare decat cea a unui telefon cu rezolutia de pana la 1000px
+        document.getElementById("containerImagineSiMesaj").style.cssText = " width: 1100px; height: 450px; margin-top: 120px; z-index: 11;border: 12px solid rgb(220,220,230); ";
+        document.getElementById("containerPentruImagineClipPath").style.display = "none";
+        document.getElementById("mesajLangaImagine").style.display = "none";
+        document.getElementById("containerImagineSiMesaj").style.background = "white";
+        setTimeout(function () {
+            document.getElementById("containerPentruImagineClipPathDoi").style.display = "inline";
+        }, 400);
+        setTimeout(function () {
+            document.getElementById("butonInchidereContainerMare").style.display = "inline";
+        }, 500);
+        setTimeout(function () {
+            document.getElementById("header-contact").style.cssText = "width :1122px; box-shadow: 0 0 0 #909090;";
+        }, 300);
+        setTimeout(function () {
+            document.getElementById("despreMine").style.display = "inline";
+        }, 500);
+        setTimeout(function () {
+            document.getElementById("citatDespreMine").style.display = "inline";
+        }, 500);
+    }
+
+}
+
+function micsoreazaImagineaSiMesaj() {
+    document.getElementById("butonInchidereContainerMare").style.display = "none";
+    document.getElementById("header-contact").style.cssText = "width:551px; box-shadow: 3px 5px 5px #909090;";
+    document.getElementById("containerImagineSiMesaj").style.cssText = " width: 300px; height: 140px; z-index: 11; border: 6px solid rgb(220,220,230); margin-top: 590px; ";
+    document.getElementById("containerPentruImagineClipPathDoi").style.display = "none";
+    document.getElementById("containerPentruImagineClipPath").style.display = "inline";
+    document.getElementById("despreMine").style.display = "none";
+    document.getElementById("citatDespreMine").style.display = "none";
+    setTimeout(function () {
+        document.getElementById("mesajLangaImagine").style.display = "inline";
+    }, 500);
+}
+
+    </script>
+</body>
+
+</html>
