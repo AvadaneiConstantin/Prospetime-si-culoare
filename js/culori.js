@@ -32,10 +32,10 @@ if (total >= 3 && total <= 5) {
 }
 // Vara
 else if (total >= 6 && total <= 8) {
-    document.getElementById("container_sus_doi").style.backgroundImage = "url('imagini/31-3.jpg')";
-    document.getElementById("imagineText").style.backgroundImage = "url('imagini/31-3.jpg')";
-    document.getElementById("despreCulori").style.backgroundImage = "url('imagini/31-3.jpg')";
-    document.getElementById("primul_text_sus").style.cssText = "color : #210B61;text-shadow : 2px 1px 3px black; top: 90px; left: 78%; ";
+    document.getElementById("container_sus_doi").style.backgroundImage = "url('imagini/top12.jpg')";
+    document.getElementById("imagineText").style.backgroundImage = "url('imagini/top12.jpg')";
+    document.getElementById("despreCulori").style.backgroundImage = "url('imagini/top12.jpg')";
+    document.getElementById("primul_text_sus").style.cssText = "color : #70dbff;text-shadow : 2px 1px 3px black; top: 15px; left: 55%; ";
 }
 // Toamna
 else if (total >= 9 && total <= 11) {
@@ -295,7 +295,7 @@ function change1() {
         document.getElementById("container_sus_doi").style.backgroundImage = "url('imagini/70.jpg')";
         document.getElementById("imagineText").style.backgroundImage = "url('imagini/70-3.jpg')";
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/70-3.jpg')";
-        document.getElementById("primul_text_sus").style.cssText = "left: 50%; font-size: 35px; color : #00f2fc; text-shadow:2px 1px 3px black; top: 70px";
+        document.getElementById("primul_text_sus").style.cssText = "left: 50%; font-size: 35px; color : #00f2fc; text-shadow:2px 1px 3px black; top: 20px";
         document.getElementById("container_sus_doi").style.height = "250px";
         document.getElementById("container_patrate_stanga").style.width = "290px";
         document.getElementById("container_patrate_stanga").style.height = "295px";
@@ -306,13 +306,7 @@ function change1() {
         document.getElementById("container_sus_doi").style.backgroundImage = "url('imagini/70.jpg')";
         document.getElementById("imagineText").style.backgroundImage = "url('imagini/70-3.jpg')";
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/70-3.jpg')";
-        // document.getElementById("primul_text_sus").style.backgroundColor = "rgba(255,255,255,0.6)";
-        // document.getElementById("primul_text_sus").style.background = "linear-gradient( to left, rgba(255, 255, 255, 0) 0%, rgba(255,255,255,0.6) 25%, rgba(255,255,255,0.6) 75%, rgba(255, 255, 255, 0) 100%)";
-        // document.getElementById("primul_text_sus").style.backgroundColor = "linear-gradient( to left, rgba(255, 255, 255, 0) 0%, rgba(255,255,255,0.7) 25%, rgba(255,255,255,0.7) 75%, rgba(255, 255, 255, 0) 100%)";
-
-        // document.getElementById("primul_text_sus").style.top = "55px";
-        // document.getElementById("primul_text_sus").style.left = "50%";
-        document.getElementById("primul_text_sus").style.cssText = "display : inline; left: 50%; color : #00f2fc; text-shadow:2px 1px 3px black;  top: 70px; background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, 0.5) 25%, rgb(0, 0, 0, 0.5) 75%, rgba(255, 255, 255, 0) 100%)";
+        document.getElementById("primul_text_sus").style.cssText = "display : inline; left: 50%; color : #00f2fc; text-shadow:2px 1px 3px black;  top: 20px; background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, 0.5) 25%, rgb(0, 0, 0, 0.5) 75%, rgba(255, 255, 255, 0) 100%)";
         document.getElementById("container_sus_doi").style.height = "250px";
         document.getElementById("container_patrate_stanga").style.width = "290px";
         document.getElementById("container_patrate_stanga").style.height = "295px";
@@ -343,7 +337,7 @@ function change1full() {
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/70-3.jpg')";
         document.getElementById("primul_text_sus").style.background = "linear-gradient( to left, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, 0.5) 25%, rgb(0, 0, 0, 0.5) 75%, rgba(255, 255, 255, 0) 100%)";
         document.getElementById("primul_text_sus").style.display = "inline";
-        document.getElementById("primul_text_sus").style.top = "170px";
+        document.getElementById("primul_text_sus").style.top = "120px";
         document.getElementById("primul_text_sus").style.left = "50%";
         document.getElementById("primul_text_sus").style.fontSize = "35px";
         document.getElementById("primul_text_sus").style.color = '#00f2fc';
@@ -360,7 +354,7 @@ function change1full() {
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/70-3.jpg')";
         document.getElementById("primul_text_sus").style.display = "inline";
         document.getElementById("primul_text_sus").style.background = "linear-gradient( to left, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, 0.5) 25%, rgb(0, 0, 0, 0.5) 75%, rgba(255, 255, 255, 0) 100%)";
-        document.getElementById("primul_text_sus").style.top = "170px";
+        document.getElementById("primul_text_sus").style.top = "120px";
         document.getElementById("primul_text_sus").style.left = "67%";
         document.getElementById("primul_text_sus").style.fontSize = "40px";
         document.getElementById("primul_text_sus").style.color = '#00f2fc';
@@ -381,7 +375,7 @@ function change2() {
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/51mic.jpg')";
         document.getElementById("primul_text_sus").style.background = "none";
         document.getElementById("primul_text_sus").style.display = "inline";
-        document.getElementById("primul_text_sus").style.top = "70px";
+        document.getElementById("primul_text_sus").style.top = "20px";
         document.getElementById("primul_text_sus").style.left = "50%";
         document.getElementById("primul_text_sus").style.fontSize = "33px";
         document.getElementById("primul_text_sus").style.color = '#cc3300';
@@ -398,7 +392,7 @@ function change2() {
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/51mic.jpg')";
         document.getElementById("primul_text_sus").style.background = "linear-gradient( to left, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, 0.5) 25%, rgb(0, 0, 0, 0.5) 75%, rgba(255, 255, 255, 0) 100%)";
         document.getElementById("primul_text_sus").style.display = "inline";
-        document.getElementById("primul_text_sus").style.top = "70px";
+        document.getElementById("primul_text_sus").style.top = "20px";
         document.getElementById("primul_text_sus").style.left = "70%";
         document.getElementById("primul_text_sus").style.fontSize = "40px";
         document.getElementById("primul_text_sus").style.color = 'yellow';
@@ -419,7 +413,7 @@ function change2full() {
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/51mic.jpg')";
         document.getElementById("primul_text_sus").style.background = "linear-gradient( to left, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, 0.5) 25%, rgb(0, 0, 0, 0.5) 75%, rgba(255, 255, 255, 0) 100%)";
         document.getElementById("primul_text_sus").style.display = "inline";
-        document.getElementById("primul_text_sus").style.top = "170px";
+        document.getElementById("primul_text_sus").style.top = "120px";
         document.getElementById("primul_text_sus").style.left = "50%";
         document.getElementById("primul_text_sus").style.fontSize = "33px";
         document.getElementById("primul_text_sus").style.color = 'yellow';
@@ -457,7 +451,7 @@ function change3() {
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/36-3.jpg')";
         document.getElementById("primul_text_sus").style.display = "inline";
         document.getElementById("primul_text_sus").style.background = "none";
-        document.getElementById("primul_text_sus").style.top = "70px";
+        document.getElementById("primul_text_sus").style.top = "20px";
         document.getElementById("primul_text_sus").style.left = "50%";
         document.getElementById("primul_text_sus").style.fontSize = "33px";
         document.getElementById("primul_text_sus").style.color = '#cc0000';
@@ -495,7 +489,7 @@ function change3full() {
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/36-3.jpg')";
         document.getElementById("primul_text_sus").style.display = "inline";
         document.getElementById("primul_text_sus").style.background = "none";
-        document.getElementById("primul_text_sus").style.top = "170px";
+        document.getElementById("primul_text_sus").style.top = "120px";
         document.getElementById("primul_text_sus").style.left = "50%";
         document.getElementById("primul_text_sus").style.fontSize = "33px";
         document.getElementById("primul_text_sus").style.color = '#cc0000';
@@ -551,7 +545,7 @@ function change4() {
         document.getElementById("primul_text_sus").style.display = "inline";
         document.getElementById("primul_text_sus").style.textShadow = "2px 1px 3px black";
         document.getElementById("primul_text_sus").style.background = "none";
-        document.getElementById("primul_text_sus").style.top = "70px";
+        document.getElementById("primul_text_sus").style.top = "20px";
         document.getElementById("primul_text_sus").style.left = "50%";
         document.getElementById("primul_text_sus").style.fontSize = "33px";
         document.getElementById("primul_text_sus").style.color = '#00f2fc';
@@ -568,7 +562,7 @@ function change4() {
         document.getElementById("primul_text_sus").style.display = "inline";
         document.getElementById("primul_text_sus").style.textShadow = "2px 1px 3px black";
         document.getElementById("primul_text_sus").style.background = "none";
-        document.getElementById("primul_text_sus").style.top = "70px";
+        document.getElementById("primul_text_sus").style.top = "20px";
         document.getElementById("primul_text_sus").style.left = "65%";
         document.getElementById("primul_text_sus").style.fontSize = "40px";
         document.getElementById("primul_text_sus").style.color = '#00f2fc';
@@ -606,7 +600,7 @@ function change4full() {
         document.getElementById("primul_text_sus").style.display = "inline";
         document.getElementById("primul_text_sus").style.textShadow = "2px 1px 3px black";
         document.getElementById("primul_text_sus").style.background = "none";
-        document.getElementById("primul_text_sus").style.top = "170px";
+        document.getElementById("primul_text_sus").style.top = "120px";
         document.getElementById("primul_text_sus").style.left = "50%";
         document.getElementById("primul_text_sus").style.fontSize = "33px";
         document.getElementById("primul_text_sus").style.color = '#00f2fc';
@@ -660,7 +654,7 @@ function change5() {
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/13.jpg')";
         document.getElementById("primul_text_sus").style.display = "inline";
         document.getElementById("primul_text_sus").style.background = "none";
-        document.getElementById("primul_text_sus").style.top = "70px";
+        document.getElementById("primul_text_sus").style.top = "20px";
         document.getElementById("primul_text_sus").style.left = "50%";
         document.getElementById("primul_text_sus").style.fontSize = "33px";
         document.getElementById("primul_text_sus").style.color = ' #ff5c33';
@@ -715,7 +709,7 @@ function change5full() {
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/13.jpg')";
         document.getElementById("primul_text_sus").style.background = "linear-gradient( to left, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, 0.5) 25%, rgb(0, 0, 0, 0.5) 75%, rgba(255, 255, 255, 0) 100%)";
         document.getElementById("primul_text_sus").style.display = "inline";
-        document.getElementById("primul_text_sus").style.top = "170px";
+        document.getElementById("primul_text_sus").style.top = "120px";
         document.getElementById("primul_text_sus").style.left = "50%";
         document.getElementById("primul_text_sus").style.fontSize = "33px";
         document.getElementById("primul_text_sus").style.color = ' white';
@@ -770,7 +764,7 @@ function change6() {
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/34-3.jpg')";
         document.getElementById("primul_text_sus").style.display = "inline";
         document.getElementById("primul_text_sus").style.background = "none";
-        document.getElementById("primul_text_sus").style.top = "70px";
+        document.getElementById("primul_text_sus").style.top = "20px";
         document.getElementById("primul_text_sus").style.left = "50%";
         document.getElementById("primul_text_sus").style.fontSize = "33px";
         document.getElementById("primul_text_sus").style.color = '#ffd9d9';
@@ -808,7 +802,7 @@ function change6full() {
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/34-3.jpg')";
         document.getElementById("primul_text_sus").style.display = "inline";
         document.getElementById("primul_text_sus").style.background = "none";
-        document.getElementById("primul_text_sus").style.top = "170px";
+        document.getElementById("primul_text_sus").style.top = "120px";
         document.getElementById("primul_text_sus").style.left = "50%";
         document.getElementById("primul_text_sus").style.fontSize = "33px";
         document.getElementById("primul_text_sus").style.color = '#ffd9d9';
@@ -847,7 +841,7 @@ function change7full() {
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/ur/urs1.jpg')";
         document.getElementById("primul_text_sus").style.display = "inline";
         document.getElementById("primul_text_sus").style.backgroundColor = "rgba(0,0,0,0)";
-        document.getElementById("primul_text_sus").style.top = "170px";
+        document.getElementById("primul_text_sus").style.top = "120px";
         document.getElementById("primul_text_sus").style.left = "50%";
         document.getElementById("primul_text_sus").style.fontSize = "33px";
         document.getElementById("primul_text_sus").style.color = '#00cc00';
@@ -857,10 +851,7 @@ function change7full() {
         document.getElementById("container_sus_doi").style.height = "500px";
         document.getElementById("container_informatii").style.left = "70%";
         document.getElementById("container_informatii").style.top = "150px";
-
         document.getElementById("containerTextSchimba").style.display = "none";
-        // document.getElementById("containerTextSchimba").style.top = "220px";
-        // document.getElementById("containerTextSchimba").style.left = "50%";
         document.getElementById("imagine_stanga7").style.display = "inline";
         document.getElementById("imagine_stanga8").style.display = "inline";
     } else if (latimeLaptop.matches) {
@@ -911,7 +902,7 @@ function change8full() {
         document.getElementById("despreCulori").style.backgroundImage = "url('imagini/ur/urs3-3.jpg')";
         document.getElementById("primul_text_sus").style.background = "linear-gradient( to left, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, 0.5) 25%, rgb(0, 0, 0, 0.5) 75%, rgba(255, 255, 255, 0) 100%)";
         document.getElementById("primul_text_sus").style.display = "inline";
-        document.getElementById("primul_text_sus").style.top = "170px";
+        document.getElementById("primul_text_sus").style.top = "120px";
         document.getElementById("primul_text_sus").style.left = "50%";
         document.getElementById("primul_text_sus").style.fontSize = "33px";
         document.getElementById("primul_text_sus").style.color = 'white';
